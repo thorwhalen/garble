@@ -1,0 +1,4 @@
+garble
+======
+.. automodule:: garble
+   :members:
