@@ -1,3 +1,5 @@
+"""Core text-vectorization tools — a TF-IDF vectorizer with extra conveniences."""
+
 from functools import cached_property
 import os
 import re
