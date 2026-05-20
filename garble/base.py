@@ -15,7 +15,7 @@ class TextVectorizer(TfidfVectorizer):
     def word_of_idx(self):
         _word_of_idx = {idx: word for word, idx in self.vocabulary_.items()}
 
-        __word_of_idx = np.array([''] * (1 + max(_word_of_idx)), dtype=object)
+        __word_of_idx = np.array([""] * (1 + max(_word_of_idx)), dtype=object)
         __word_of_idx[np.array(list(_word_of_idx.keys()))] = list(_word_of_idx.values())
         return __word_of_idx
 
@@ -27,7 +27,9 @@ class TextVectorizer(TfidfVectorizer):
         _, idx = sparse_vect.nonzero()
         weights = self.idf_[idx]
         sorting_indices = np.argsort(weights)[::-1]
-        return dict(zip(self.word_of_idx[idx][sorting_indices], weights[sorting_indices]))
+        return dict(
+            zip(self.word_of_idx[idx][sorting_indices], weights[sorting_indices])
+        )
 
 
 def word_cloud_gen(text_store, model=None):
@@ -49,10 +51,12 @@ def word_cloud_gen(text_store, model=None):
             print(f"Error on {i} - {key}: {e}")
 
 
-url_to_name = lambda url: re.compile(r'http://([^/]+)/?').search(url).group(1)
+url_to_name = lambda url: re.compile(r"http://([^/]+)/?").search(url).group(1)
 
 
-def compute_and_save_word_clouds(text_store, save_rootdir, model=None, key_to_filename=lambda x: x, ext='.pdf'):
+def compute_and_save_word_clouds(
+    text_store, save_rootdir, model=None, key_to_filename=lambda x: x, ext=".pdf"
+):
     from wordcloud import WordCloud  # pip install wordcloud
 
     if model is None:
@@ -64,7 +68,7 @@ def compute_and_save_word_clouds(text_store, save_rootdir, model=None, key_to_fi
     for i, key in enumerate(text_store):
         try:
             filename = key_to_filename(key)
-            save_filepath = os.path.join(save_rootdir, f'{filename}{ext}')
+            save_filepath = os.path.join(save_rootdir, f"{filename}{ext}")
             if not os.path.isfile(save_filepath):
                 text = text_store[key]
                 weight_of_word = model.weight_of_word(text)
