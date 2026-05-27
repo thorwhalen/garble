@@ -6,7 +6,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "garble"
-version = "0.0.4"
+version = "0.0.5"
 description = "Make bags of words and do stuff with them for make benefit"
 readme = "README.md"
 requires-python = ">=3.10"
