@@ -1,0 +1,13 @@
+﻿garble
+======
+
+.. automodule:: garble
+
+   
+.. rubric:: Modules
+
+.. autosummary::
+   :toctree:
+   :recursive:
+
+   base

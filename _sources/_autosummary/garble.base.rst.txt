@@ -1,0 +1,20 @@
+garble.base
+===========
+
+.. automodule:: garble.base
+
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      compute_and_save_word_clouds
+      url_to_name
+      word_cloud_gen
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+   
+      TextVectorizer
+   

@@ -1,0 +1,20 @@
+# garble
+
+> Make bags of words and do stuff with them for make benefit
+
+
+## Pages
+
+- [garble](index.html.md): Make bags of words and do stuff with them for make benefit
+- [API reference](api.html.md): | &#96;garble&#96;   |    |
+- [garble](_autosummary/garble.html.md): | &#96;base&#96;   | Core text-vectorization tools — a TF-IDF vectorizer with extra conveniences.   |
+- [garble.base](_autosummary/garble.base.html.md): Core text-vectorization tools — a TF-IDF vectorizer with extra conveniences.
+- [About this build](about-this-build.html.md): This documentation was built on &#42;&#42;2026-11-22 20:50 UTC&#42;&#42; from commit &lt;a href="https://github.com/tho...
+
+## Optional
+
+- [garble.md](garble.md): Complete documentation in a single file.
+
+## Build
+
+- [build_info.json](build_info.json): build provenance (commit, version, tool versions, whether the docs match the package)

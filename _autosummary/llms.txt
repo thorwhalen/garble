@@ -1,0 +1,13 @@
+# garble
+
+> Make bags of words and do stuff with them for make benefit
+
+
+## Pages in this subsection
+
+- [garble](garble.html.md): | &#96;base&#96;   | Core text-vectorization tools — a TF-IDF vectorizer with extra conveniences.   |
+- [garble.base](garble.base.html.md): Core text-vectorization tools — a TF-IDF vectorizer with extra conveniences.
+
+## Optional
+
+- [Top-level llms.txt](../llms.txt): Complete documentation index.
